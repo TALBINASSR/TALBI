@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PH54N37D4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8PH54N37D4');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>SKYLINE SERIES DOCUMENTATION | TALBI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TALBI</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#projets">Projets</a></li>
+        </ul>
+        <div class="burger" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="doc-layout container" style="margin-top: 50px;">
+        <main class="doc-content">
+            <h1 class="section-title" style="text-align: left;">SKYLINE SERIES DOCUMENTATION</h1>
+            <h3 id="v1-desc" class="doc-section">Our way to the sky... is our way to the future...</h1>
+            <img src="SKY-LINE/A.jpeg" alt="SKYLINE SERIES Showcase" class="doc-img">
+            <section id="global-desc" class="doc-section">
+                <h3 class="section-title">Vision de la Série SKYLINE</h3>
+                <p>
+                    La série <strong>SKYLINE</strong> représente mon parcours d'ingénierie dans le domaine de l'aéronautique et des systèmes embarqués. Ce projet évolutif vise à concevoir des aéronefs à voilure fixe de type "Pusher" (propulsion arrière), en partant d'une structure purement mécanique pour aboutir à une plateforme intelligente et stabilisée de manière autonome.
+                </p>
+                <p>
+                    Chaque itération de la série SKYLINE résout des défis spécifiques : l'aérodynamisme et la résistance des matériaux pour la V1, et l'avionique complexe avec contrôle PID sur STM32 pour la V2. Cette démarche illustre une maîtrise complète du <strong>cycle de développement en V</strong>, de la théorie aérodynamique à la fabrication réelle.
+                </p>
+                
+                
+            </section>
+
+            <hr class="doc-sep">
+
+            <section id="sky1">
+                <h2 class="version-header">SKYLINE I : Conception & Validation</h2>
+                <div class="doc-section">
+                    <div class="specs-container">
+                        <h3 class="section-title">Fiche Technique</h3>
+                        <table class="specs-table">
+                            <thead>
+                                <tr>
+                                    <th>Paramètre</th>
+                                    <th>Spécification</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Nom de modele</strong></td>
+                                    <td>SKYLINE1</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>type de modele</strong></td>
+                                    <td>twin boom pusher (H-TAIL CONFIG)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Envergure (Wingspan)</strong></td>
+                                    <td>1200 mm</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Poids au décollage (MTOW)</strong></td>
+                                    <td>850 g</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Propulsion</strong></td>
+                                    <td>Brushless Outrunner (Pusher)</td>
+                                </tr>
+                               
+                                <tr>
+                                    <td><strong>Batterie</strong></td>
+                                    <td>LiPo 3S 2200mAh</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Matériaux</strong></td>
+                                    <td>Mousse XPS, renfort  en bois</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3 id="v1-design" class="section-title">Conception & Design CAD</h3>
+                    <p>La conception de la SKYLINE I a été réalisée en utilisant des outils de CAO (Conception Assistée par Ordinateur) pour garantir une précision maximale dans les dimensions et les ajustements. Le design a été optimisé pour réduire la traînée tout en maintenant une structure robuste.</p>
+                    <ul>
+                        <li><strong>Logiciel utilisé :</strong> SolidWorks et Onshape</li>
+                        <li><strong>Étapes principales :</strong> Modélisation 3D, simulation aérodynamique, et génération des plans de découpe.</li>
+                    </ul>
+                    <div class="photo-gallery">
+                        <img src="SKY-LINE/skyline1_cad1.png" class="doc-img" alt="Modèle CAD Vue Isométrique">
+                        <img src="SKY-LINE/skyline1_cad2.png" class="doc-img" alt="Modèle CAD Vue Latérale">
+                        <img src="SKY-LINE/skyline1_cad3.png" class="doc-img" alt="Modèle CAD Vue Isométrique">
+                        <!-- <img src="skyline1_cad4.jpg" class="doc-img" alt="Modèle CAD Vue Latérale"> -->
+                    </div>
+                    <h3 id="v1-etude" class="section-title">Étude Aérodynamique</h3>
+
+                    <!-- Étude de l'aile et du profil aérodynamique -->
+                    <section id="wing-airfoil-study">
+                        <h4 class="sub-section-title">1. Étude de l'Aile et du Profil Aérodynamique</h4>
+                        <p>La SKYLINE I a servi de banc d'essai pour valider la configuration "Pusher". L'étude s'est concentrée sur la stabilité statique longitudinale et l'influence de la position du moteur sur le centre de poussée.</p>
+                        <ul>
+                            <li><strong>Profil d'aile :</strong> Utilisation d'un profil Clark Y pour sa portance élevée à basse vitesse.</li>
+                            <li><strong>Calcul de Stabilité :</strong> Détermination précise du centre de gravité ($CG$) pour compenser l'absence de stabilisation électronique initiale.</li>
+                        </ul>
+                        <div class="photo-gallery">
+                            <img src="SKY-LINE/wing_airfoil1.png" class="doc-img" alt="Étude du profil aérodynamique">
+                            <img src="SKY-LINE/wing_airfoil2.png" class="doc-img" alt="Simulation aérodynamique de l'aile">
+                        </div>
+                    </section>
+
+                    <!-- Étude du fuselage et minimisation de la traînée -->
+                    <section id="fuselage-drag-study">
+                        <h4 class="sub-section-title">2. Étude du Fuselage et Minimisation de la Traînée</h4>
+                        <p>Le fuselage a été conçu pour réduire la traînée tout en maintenant une structure robuste et légère. L'optimisation a été réalisée en tenant compte des contraintes de fabrication et des performances aérodynamiques.</p>
+                        <ul>
+                            <li><strong>Forme du fuselage :</strong> Design profilé pour minimiser la traînée parasite.</li>
+                            <li><strong>Position du moteur :</strong> Placement stratégique pour équilibrer les forces aérodynamiques et réduire les perturbations.</li>
+                        </ul>
+                        <div class="photo-gallery">
+                            <img src="SKY-LINE/fuselage_drag1.png" class="doc-img" alt="Étude du fuselage">
+                            <img src="SKY-LINE/fuselage_drag2.png" class="doc-img" alt="Simulation de la traînée du fuselage">
+                        </div>
+                    </section>
+                    
+
+                    <h3 id="v1-fab" class="section-title">Fabrication & Structure</h3>
+                    <p>La fabrication repose sur une structure composite "low-cost" mais rigide, adaptée aux tests de terrain.</p>
+                    <ul>
+                        <li><strong>Cellule :</strong> Mousse polystyrène extrudée (XPS) pour la légèreté.</li>
+                        <li><strong>Renforts :</strong> Intégration de longerons en bois de pin traversant l'aile pour prévenir la flexion sous charge.</li>
+                    </ul>
+                    <img src="skyline1_build.jpg" alt="Construction Skyline 1" class="doc-img2">
+                </div>
+            </section>
+
+            <hr class="doc-sep">
+
+            <section id="sky2">
+                <h2 class="version-header">SKYLINE II : Avionique & Stabilité Augmentée</h2>
+                <div class="specs-container">
+                    <h3 class="section-title">Fiche Technique</h3>
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Paramètre</th>
+                                <th>Spécification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Nom de modele</strong></td>
+                                <td>SKYLINE2</td>
+                            </tr>
+                            <tr>
+                                <td><strong>type de modele</strong></td>
+                                <td>twin boom pusher (H-TAIL CONFIG)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Envergure (Wingspan)</strong></td>
+                                <td>1350 mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Poids au décollage (MTOW)</strong></td>
+                                <td>920 g</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Propulsion</strong></td>
+                                <td>Brushless Outrunner (Pusher)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Contrôleur de vol (FC)</strong></td>
+                                <td>STM32 Custom Firmware,MPU6050</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Batterie</strong></td>
+                                <td>Li-ion 3S 4400mAh</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Matériaux</strong></td>
+                                <td>Mousse XPS,carton mousse & Longeron Bois de Pin</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="doc-section">
+                    <h3 id="v2-etude" class="section-title">1. Étude Dynamique & Contrôle</h3>
+                    <p>L'innovation majeure de la V2 est la suppression de la dérive verticale mobile, confiant la stabilité de lacet à un système d'asservissement actif.</p>
+                    <ul>
+                        <li><strong>Stabilité de lacet :</strong> Étude de l'effet gyroscopique et de la compensation électronique via les ailerons.</li>
+                        <li><strong>Modélisation PID :</strong> Implémentation d'une boucle de régulation pour stabiliser l'assiette en temps réel.</li>
+                    </ul>
+                    
+                    <div class="photo-gallery">
+                        <img src="1000073261.jpg" class="doc-img" alt="CAO Isométrique">
+                        <img src="1000073260.jpg" class="doc-img" alt="CAO Arrière">
+                    </div>
+
+                    <h3 id="v2-fab" class="section-title">2. Fabrication & Électronique</h3>
+                    <p>Le fuselage a été redessiné pour accueillir une unité de traitement performante et optimiser le flux d'air moteur.</p>
+                    <ul>
+                        <li><strong>Avionique :</strong> Microcontrôleur STM32 (ARM Cortex-M) pour une gestion ultra-rapide des signaux PWM.</li>
+                        <li><strong>Capteurs :</strong> Centrale inertielle MPU6050 filtrée par un algorithme complémentaire.</li>
+                    </ul>
+
+                    <h3 id="v2-code" class="section-title">3. Firmware (C++)</h3>
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>SKYLINE2_STM32_CONTROL.cpp</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <pre><code>// Calcul PID pour la stabilisation active
+void updateFlightStabilization() {
+    float currentPitch = IMU.readPitch();
+    float error = targetPitch - currentPitch;
+    float output = Kp * error + Ki * integral + Kd * derivative;
+    setServoPosition(output);
+}</code></pre>
+                    </div>
+
+                    <h3 id="v2-but" class="section-title">But du projet</h3>
+                    <p>Démontrer la fusion entre la mécanique aéronautique et l'informatique embarquée pour créer un drone agile, capable de voler avec une géométrie simplifiée grâce à l'intelligence logicielle.</p>
+                </div>
+            </section>
+        </main>
+
+        <aside class="doc-sidebar">
+            <div class="sticky-index">
+                <h4>Index SKYLINE</h4>
+                <ul class="index-list">
+                    <li><a href="#global-desc"><strong>Vision Globale</strong></a></li>
+                    <li style="margin-top:10px"><strong>SKYLINE I</strong>
+                        <ul>
+                            <li><a href="#v1-etude">Étude Aéro</a></li>
+                            <li><a href="#v1-fab">Fabrication</a></li>
+                        </ul>
+                    </li>
+                    <li style="margin-top:10px"><strong>SKYLINE II</strong>
+                        <ul>
+                            <li><a href="#v2-etude">Étude Dyn</a></li>
+                            <li><a href="#v2-fab">Fabrication</a></li>
+                            <li><a href="#v2-code">Code STM32</a></li>
+                            <li><a href="#v2-but">But</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                TALBI <span>NASR ALLAH</span>
+            </div>
+            <p class="footer-tagline">Élève Ingénieur ENSAM | Spécialiste en Systèmes Embarqués & Mécanique</p>
+            
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/nasr-allah-talbi-77899232b" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/TALBINASR" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.instagram.com/talbinassr" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="mailto:talbynassro@email.com" title="Email">
+                    <i class="fas fa-envelope"></i> talbynassro@email.com
+                </a>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2026 TALBI NASR ALLAH. Tous droits réservés.</p>
+                <p>ENSAM - Arts & Métiers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // 1. ANIMATION LOGO
+    const logo = document.querySelector('.logo');
+    if (logo) {
+        const letters = logo.textContent.split("");
+        logo.innerHTML = letters.map(char => `<span>${char === " " ? "&nbsp;" : char}</span>`).join("");
+        anime({
+            targets: '.logo span',
+            translateY: [{ value: '-1.7rem', easing: 'easeOutExpo', duration: 600 }, { value: 0, easing: 'easeOutBounce', duration: 800, delay: 100 }],
+            rotate: { value: '-1turn', delay: 0 },
+            delay: anime.stagger(50), 
+            easing: 'easeInOutCirc',
+            loop: true
+        });
+    }
+
+    // 2. MENU MOBILE (BURGER) + INDEX CLONÉ (COMME R-LINE)
+    const burger = document.getElementById('burgerMenu');
+    const nav = document.getElementById('navLinks');
+    const sidebar = document.querySelector('.doc-sidebar');
+
+    if (burger && nav) {
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            burger.classList.toggle('toggle');
+        });
+
+        // Fermeture automatique au clic sur un lien
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                burger.classList.remove('toggle');
+            });
+        });
+
+        // Clonage de l'index pour le mobile
+        if (window.innerWidth < 800 && sidebar) {
+            const indexClone = sidebar.cloneNode(true);
+            nav.appendChild(indexClone);
+        }
+    }
+    // Fermer le menu en cliquant sur l'arrière-plan (n'importe où sauf le menu et le burger)
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = nav.contains(event.target);
+    const isClickOnBurger = burger.contains(event.target);
+
+    // Si le menu est ouvert ET que le clic n'est ni sur le menu ni sur le burger
+    if (nav.classList.contains('active') && !isClickInsideMenu && !isClickOnBurger) {
+        nav.classList.remove('active');
+        burger.classList.remove('toggle');
+    }
+});
+
+    // 3. COPIE DU CODE
+    document.querySelectorAll('.copy-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const container = this.closest('.code-container');
+            const code = container.querySelector('code').innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                this.innerText = "Copié !";
+                setTimeout(() => { this.innerText = "Copier"; }, 2000);
+            });
+        });
+    });
+    </script>
+</body>
+</html>
