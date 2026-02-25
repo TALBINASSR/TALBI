@@ -70,6 +70,15 @@
                 </div>
                 <div class="about-img"><img src="T3.png" alt="Automobile"></div>
             </div>
+
+
+            <div class="about-item reverse">
+                <div class="about-text">
+                    <h3>Aeronotique et dynamique</h3>
+                    <p>Passionné par l'aéronautique, je m'intéresse à la dynamique des fluides et à la conception de structures légères et résistantes. J'explore les principes de l'aérodynamique pour optimiser les performances des véhicules aériens.</p>
+                </div>
+                <div class="about-img"><img src="T4.png" alt="aeronitique"></div>
+            </div>
        
     </section>
 
@@ -110,7 +119,7 @@
         
             <a href="projet-detail5.html" class="card-link2">
                 <div class="card2">
-                    <img src="T3.png" class="project-img2">
+                    <img src="p5.png" class="project-img2">
                     <h3>ULTRACAR1</h3>
                     <p>Mes premiers pas dans l'industrie automobile, débutant par des conceptions mécaniques simples vers des systèmes plus complexes.</p>
                 </div>
@@ -219,6 +228,17 @@
             nav.classList.remove('active');
         });
     });
+      // Fermer le menu en cliquant sur l'arrière-plan (n'importe où sauf le menu et le burger)
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = nav.contains(event.target);
+    const isClickOnBurger = burger.contains(event.target);
+
+    // Si le menu est ouvert ET que le clic n'est ni sur le menu ni sur le burger
+    if (nav.classList.contains('active') && !isClickInsideMenu && !isClickOnBurger) {
+        nav.classList.remove('active');
+        burger.classList.remove('toggle');
+    }
+});
 </script>
 
 <script>
