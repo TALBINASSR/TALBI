@@ -1258,6 +1258,17 @@
             });
         });
     }
+    // Fermer le menu en cliquant sur l'arrière-plan (n'importe où sauf le menu et le burger)
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = nav.contains(event.target);
+    const isClickOnBurger = burger.contains(event.target);
+
+    // Si le menu est ouvert ET que le clic n'est ni sur le menu ni sur le burger
+    if (nav.classList.contains('active') && !isClickInsideMenu && !isClickOnBurger) {
+        nav.classList.remove('active');
+        burger.classList.remove('toggle');
+    }
+});
 
     // 3. COPIE DU CODE
     document.querySelectorAll('.copy-btn').forEach(button => {
