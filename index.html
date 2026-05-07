@@ -7,19 +7,36 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-8PH54N37D4');
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TALBI NASR ALLAH | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+</style>
 </head>
 <body>
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-content">
+      <div class="mechanical-icon">
+          <i class="fas fa-cog gear-large"></i>
+          <i class="fas fa-cog gear-small"></i>
+          <i class="fas fa-plane-slanted plane-icon"></i>
+      </div>
+      <div class="loading-bar-container">
+          <div class="loading-bar"></div>
+      </div>
+      <p class="loading-text">INITIALIZING SYSTEMS...</p>
+  </div>
+</div>
+<!-- SCROLL PROGRESS BAR -->
+<div id="scroll-progress"></div>
 
     <nav class="navbar">
         <div class="logo">TALBI</div>
@@ -40,104 +57,213 @@
         <h1>TALBI NASR ALLAH</h1>
         <p>Élève Ingénieur ENSAM | Mécanique - Électronique - Programmation</p>
         <a href="#projets" class="btn-main">Découvrir mes projets</a>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-num" data-count="12">0</div>
+            <div class="stat-label">Projets</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num" data-count="7">0</div>
+            <div class="stat-label">Distinctions</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num" data-count="2">0</div>
+            <div class="stat-label">Années ENSAM</div>
+          </div>
+        </div>
     </header>
 
     <section id="about" class="container">
-        <h2 class="section-title">À propos de moi</h2>
-        <p class="intro-text">Étudiant en 2ème année à l'ENSAM, je développe des solutions innovantes alliant précision mécanique et intelligence embarquée.</p>
+        <h2 class="section-title reveal">À propos de moi</h2>
+        <p class="intro-text reveal">Étudiant en 2ème année à l'ENSAM, je développe des solutions innovantes alliant précision mécanique et intelligence embarquée.</p>
 
-        
-            <div class="about-item">
-                <div class="about-text">
-                    <h3>Mécanique & Conception</h3>
-                    <p>Spécialisé en conception CAO et analyse de structures, je maîtrise <strong>SolidWorks</strong> et <strong>Onshape</strong>. Je transforme des concepts théoriques en prototypes fonctionnels prêts pour la fabrication.</p>
-                </div>
-                <div class="about-img"><img src="T1.png" alt="Mécanique"></div>
+        <div class="about-item">
+            <div class="about-text">
+                <h3>Mécanique & Conception</h3>
+                <p>Spécialisé en conception CAO et analyse de structures, je maîtrise <strong>SolidWorks</strong> et <strong>Onshape</strong>. Je transforme des concepts théoriques en prototypes fonctionnels prêts pour la fabrication.</p>
             </div>
-        
-            <div class="about-item reverse">
-                <div class="about-text">
-                    <h3>Électronique & Programmation</h3>
-                    <p>Expert en systèmes embarqués et robotique, je maîtrise le dimensionnement de circuits et le design de <strong>PCB</strong> via AutoCAD Electrical et EasyEDA. J'assure également la programmation de microcontrôleurs et l'intégration de circuits intégrés (ICs).</p>
-                </div>
-                <div class="about-img"><img src="T2.png" alt="Robotique"></div>
-            </div>
-        
-            <div class="about-item">
-                <div class="about-text">
-                    <h3>Ingénierie Automobile</h3>
-                    <p>Passionné par la dynamique des véhicules, je m'implique activement dans l'optimisation des performances. Je possède une expérience pratique en maintenance et en diagnostic électronique automobile.</p>
-                </div>
-                <div class="about-img"><img src="T3.png" alt="Automobile"></div>
-            </div>
+            <div class="about-img"><img src="T1.png" alt="Mécanique"></div>
+        </div>
 
-
-            <div class="about-item reverse">
-                <div class="about-text">
-                    <h3>Aeronotique et dynamique</h3>
-                    <p>Passionné par l'aéronautique, je m'intéresse à la dynamique des fluides et à la conception de structures légères et résistantes. J'explore les principes de l'aérodynamique pour optimiser les performances des véhicules aériens.</p>
-                </div>
-                <div class="about-img"><img src="T4.png" alt="aeronitique"></div>
+        <div class="about-item reverse">
+            <div class="about-text">
+                <h3>Électronique & Programmation</h3>
+                <p>Expert en systèmes embarqués et robotique, je maîtrise le dimensionnement de circuits et le design de <strong>PCB</strong> via AutoCAD Electrical et EasyEDA. J'assure également la programmation de microcontrôleurs et l'intégration de circuits intégrés (ICs).</p>
             </div>
-       
+            <div class="about-img"><img src="T2.png" alt="Robotique"></div>
+        </div>
+
+        <div class="about-item">
+            <div class="about-text">
+                <h3>Ingénierie Automobile</h3>
+                <p>Passionné par la dynamique des véhicules, je m'implique activement dans l'optimisation des performances. Je possède une expérience pratique en maintenance et en diagnostic électronique automobile.</p>
+            </div>
+            <div class="about-img"><img src="T3.png" alt="Automobile"></div>
+        </div>
+
+        <div class="about-item reverse">
+            <div class="about-text">
+                <h3>Aeronotique et dynamique</h3>
+                <p>Passionné par l'aéronautique, je m'intéresse à la dynamique des fluides et à la conception de structures légères et résistantes. J'explore les principes de l'aérodynamique pour optimiser les performances des véhicules aériens.</p>
+            </div>
+            <div class="about-img"><img src="T4.png" alt="aeronitique"></div>
+        </div>
     </section>
 
     <section id="projets" class="container2 bg-grey-dark">
-        <h2 class="section-title">Mes Projets</h2>
-        <div class="grid2">
-            <a href="R_LINE_SERIES.html" class="card-link2">
-                <div class="card2">
-                    <img src="p1.png" class="project-img2">
-                    <h3>R-LINE SERIES</h3>
-                    <p>Ma série de prototypes automobiles axée sur le développement de principes mécaniques, électroniques et logiciels avancés.</p>
-                </div>
-            </a>
-        
-            <a href="SKYLINE_SERIES.html" class="card-link2">
-                <div class="card2">
-                    <img src="p2.png" class="project-img2">
-                    <h3>SKY-LINE SERIES</h3>
-                    <p>Conception d'avions R/C semi-autonomes et autonomes, intégrant des phases d'études aérodynamiques et de fabrication de prototypes.</p>
-                </div>
-            </a>
-        
-            <a href="projet-detail3.html" class="card-link2">
-                <div class="card2">
-                    <img src="p3.png" class="project-img2">
-                    <h3>AWESOME WRIST</h3>
-                    <p>Développement complet d'une smartwatch multifonctionnelle intégrant des systèmes intelligents : GPS, Wi-Fi et Bluetooth.</p>
-                </div>
-            </a>
-        
-            <a href="projet-detail4.html" class="card-link2">
-                <div class="card2">
-                    <img src="p4.png" class="project-img2">
-                    <h3>SPIDER</h3>
-                    <p>Série de robots multipodes (araignée, robochien, hexapode) basée sur des études mécaniques, dynamiques et électroniques approfondies.</p>
-                </div>
-            </a>
-        
-            <a href="projet-detail5.html" class="card-link2">
-                <div class="card2">
-                    <img src="p5.png" class="project-img2">
-                    <h3>ULTRACAR1</h3>
-                    <p>Mes premiers pas dans l'industrie automobile, débutant par des conceptions mécaniques simples vers des systèmes plus complexes.</p>
-                </div>
-            </a>
-        
-            <a href="projet-detail6.html" class="card-link2">
-                <div class="card2">
-                    <img src="p6.png" class="project-img2">
-                    <h3>TALBI GAME ENGINE</h3>
-                    <p>Développement de jeux vidéo et optimisation de compétences en programmation C# sous l'environnement Unity.</p>
-                </div>
-            </a>
+        <h2 class="section-title reveal">Mes Projets</h2>
+        <div class="grid2 reveal-stagger">
+
+          <a href="CMAM_ROVER.html" class="card-link2">
+            <div class="card2">
+              <img src="p8.png" class="project-img2">
+              <h3>CMAM ROVER</h3>
+              <p>Prototype de véhicule tout-terrain à chenilles, conçu pour accomplir des missions dangereuses ou difficiles d'accès pour l'humain.</p>
+              <div class="tags">
+                <span class="tag">Mécanique</span>
+                <span class="tag">CAD</span>
+                <span class="tag">Électronique</span>
+                <span class="tag">Embarqué</span>
+                <span class="tag">Robotique</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="CRIAM26_CARGO.html" class="card-link2">
+            <div class="card2">
+              <img src="p7.png" class="project-img2">
+              <h3>CRIAM26 CARGO</h3>
+              <p>Étude complète et réalisation d'un grand avion R/C, intégrant des concepts avancés en aérodynamique et en structure.</p>
+              <div class="tags">
+                <span class="tag">Aérodynamique</span>
+                <span class="tag">Structure</span>
+                <span class="tag">CAD</span>
+                <span class="tag">Fabrication</span>
+                <span class="tag">Électronique</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="SKYLINE_SERIES.html" class="card-link2">
+            <div class="card2">
+              <img src="p2.png" class="project-img2">
+              <h3>SKY-LINE SERIES</h3>
+              <p>Conception d'avions R/C semi-autonomes et autonomes, intégrant des phases d'études aérodynamiques et de fabrication de prototypes.</p>
+              <div class="tags">
+                <span class="tag">Aérodynamique</span>
+                <span class="tag">Conception</span>
+                <span class="tag">CAD</span>
+                <span class="tag">Électronique</span>
+                <span class="tag">Autonomie</span>
+                <span class="tag">Prototypage</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="R_LINE_SERIES.html" class="card-link2">
+            <div class="card2">
+              <img src="p1.png" class="project-img2">
+              <h3>R-LINE SERIES</h3>
+              <p>Ma série de prototypes automobiles axée sur le développement de principes mécaniques, électroniques et logiciels avancés.</p>
+              <div class="tags">
+                <span class="tag">Mécanique</span>
+                <span class="tag">Électronique</span>
+                <span class="tag">CAD</span>
+                <span class="tag">Logiciel</span>
+                <span class="tag">Prototypage</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projet-detail3.html" class="card-link2">
+            <div class="card2">
+              <img src="p3.png" class="project-img2">
+              <h3>AWESOME WRIST</h3>
+              <p>Développement complet d'une smartwatch multifonctionnelle intégrant des systèmes intelligents : GPS, Wi-Fi et Bluetooth.</p>
+              <div class="tags">
+                
+                <span class="tag">Embarqué</span>
+                <span class="tag">GPS</span>
+                <span class="tag">Bluetooth</span>
+                <span class="tag">Wi-Fi</span>
+                <span class="tag">PCB Design</span>
+                <span class="tag">IoT</span>
+                <span class="tag">C++</span>
+                <span class="tag">GUI design</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projet-detail4.html" class="card-link2">
+            <div class="card2">
+              <img src="p4.png" class="project-img2">
+              <h3>SPIDER</h3>
+              <p>Série de robots multipodes (araignée, robochien, hexapode) basée sur des études mécaniques, dynamiques et électroniques approfondies.</p>
+              <div class="tags">
+                <span class="tag">Robotique</span>
+                <span class="tag">Dynamique</span>
+                <span class="tag">Servomoteurs</span>
+                <span class="tag">CAD</span>
+                <span class="tag">Embarqué</span>
+                <span class="tag">Cinématique</span>
+              </div>
+            </div>
+          </a>
+          <a href="MOTOREDUCTEUR.html" class="card-link2">
+            <div class="card2">
+              <img src="p9.png" class="project-img2">
+              <h3>MOTOREDUCTEUR</h3>
+              <p>Étude, conception et réalisation d'un motoreducteur, intégrant des principes mécaniques avancés et des techniques de fabrication précises.</p>
+              <div class="tags">
+                <span class="tag">Mécanique</span>
+                <span class="tag">SolidWorks</span>
+                <span class="tag">Onshape</span>
+                <span class="tag">Conception</span>
+                <span class="tag">Fabrication</span>
+                <span class="tag">Prototypage</span>
+              </div>
+            </div>
+          </a>
+          <a href="projet-detail5.html" class="card-link2">
+            <div class="card2">
+              <img src="p5.png" class="project-img2">
+              <h3>ULTRACAR1</h3>
+              <p>Mes premiers pas dans l'industrie automobile, débutant par des conceptions mécaniques simples vers des systèmes plus complexes.</p>
+              <div class="tags">
+                <span class="tag">Mécanique</span>
+                <span class="tag">CAD</span>
+                <span class="tag">Conception</span>
+                <span class="tag">Fabrication</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projet-detail6.html" class="card-link2">
+            <div class="card2">
+              <img src="p6.png" class="project-img2">
+              <h3>TALBI GAME ENGINE</h3>
+              <p>Développement de jeux vidéo et optimisation de compétences en programmation C# sous l'environnement Unity.</p>
+              <div class="tags">
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <span class="tag">Game Dev</span>
+                <span class="tag">Programmation</span>
+                <span class="tag">Optimisation</span>
+              </div>
+            </div>
+          </a>
+
         </div>
     </section>
 
     <section id="competitions" class="container2">
-        <h2 class="section-title">Compétitions & Distinctions</h2>
-        <div class="grid2">
+        <h2 class="section-title reveal">Compétitions & Distinctions</h2>
+        <div class="grid2 reveal-stagger">
+            <div class="card2 highlight">
+                <img src="competition4.png" alt="Compétition nationale de la robotique NRC 2026">
+                <h3>1er prix - Compétition nationale de la robotique NRC (NATIONAL ROBOTICS COMPETITION) 2026</h3>
+                <p>Première place avec mon équipe, compétition organisée par Departement EMINES a l`UM6P.</p>
+            </div>
             <div class="card2 highlight">
                 <img src="competition1.png" alt="Compétition nationale de la robotique ARB 2025">
                 <h3>1er prix - Compétition nationale de la robotique ARB 2025</h3>
@@ -157,17 +283,15 @@
     </section>
 
     <section id="parcours" class="container2 bg-grey-dark">
-        <h2 class="section-title">Mon Parcours</h2>
-        <div class="card2">
+        <h2 class="section-title reveal">Mon Parcours</h2>
+        <div class="card2 reveal reveal-scale">
             <h3>ENSAM (Arts & Métiers)</h3>
             <p>Cycle preparatoire en cours (2ème année).</p>
         </div>
-        <div class="card2">
+        <div class="card2 reveal reveal-scale" style="transition-delay:0.15s">
             <h3>lycee SAKIA ELHAMRA</h3>
             <p>Baccalauréat Sciences Mathématiques A, Mention Très Bien (2024).</p>
         </div>
-
-
     </section>
 
     <footer class="main-footer">
@@ -176,7 +300,6 @@
                 TALBI <span>NASR ALLAH</span>
             </div>
             <p class="footer-tagline">Élève Ingénieur ENSAM | Spécialiste en Systèmes Embarqués & Mécanique</p>
-            
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/nasr-allah-talbi-77899232b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
                     <i class="fab fa-linkedin"></i> LinkedIn
@@ -191,7 +314,6 @@
                     <i class="fas fa-envelope"></i> talbynassro@email.com
                 </a>
             </div>
-    
             <div class="footer-bottom">
                 <p>&copy; 2026 TALBI NASR ALLAH. Tous droits réservés.</p>
                 <p>ENSAM - Arts & Métiers</p>
@@ -199,71 +321,209 @@
         </div>
     </footer>
 
-    <script>
-        // Animation Logo
-        const logo = document.querySelector('.logo');
-        const letters = logo.textContent.split("");
-        logo.innerHTML = letters.map(char => `<span>${char === " " ? "&nbsp;" : char}</span>`).join("");
-        anime({
-            targets: '.logo span',
-            translateY: [{ value: '-1.7rem', easing: 'easeOutExpo', duration: 600 }, { value: 0, easing: 'easeOutBounce', duration: 800, delay: 100 }],
-            rotate: { value: '-1turn', delay: 0 },
-            delay: anime.stagger(50), 
-            easing: 'easeInOutCirc',
-            loop: true
-        });
-    </script>
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" title="Retour en haut">↑</button>
 
 <script>
-    const burger = document.getElementById('burgerMenu');
-    const nav = document.getElementById('navLinks');
+  // ── PRELOADER LOGIC ──
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
     
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('active'); // Ouvre/Ferme le menu
+    // Add a slight delay so the animation can be seen
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+        document.body.classList.remove('loading');
         
-        // Animation optionnelle du burger (les barres se croisent)
+        // Trigger Hero animations manually if needed
+        startHeroAnimations(); 
+    }, 2200); 
+});
+
+// Ensure body is locked during load
+document.body.classList.add('loading');
+/* ── LOGO ANIMATION ── */
+const logo = document.querySelector('.logo');
+const letters = logo.textContent.split("");
+logo.innerHTML = letters.map(char => `<span>${char === " " ? "&nbsp;" : char}</span>`).join("");
+anime({
+    targets: '.logo span',
+    translateY: [{ value: '-1.7rem', easing: 'easeOutExpo', duration: 600 }, { value: 0, easing: 'easeOutBounce', duration: 800, delay: 100 }],
+    rotate: { value: '-1turn', delay: 0 },
+    delay: anime.stagger(50),
+    easing: 'easeInOutCirc',
+    loop: true
+});
+
+/* ── SCROLL PROGRESS BAR ── */
+const progressBar = document.getElementById('scroll-progress');
+window.addEventListener('scroll', () => {
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  progressBar.style.width = (scrollTop / scrollHeight * 100) + '%';
+}, { passive: true });
+
+/* ── INTERSECTION OBSERVER: reveal elements ── */
+const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ── STAGGER GRIDS ── */
+const staggerObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      staggerObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.reveal-stagger').forEach(el => staggerObserver.observe(el));
+
+/* ── SECTION TITLE UNDERLINE ── */
+const titleObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('title-visible');
+      titleObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.section-title').forEach(el => titleObserver.observe(el));
+
+/* ── ABOUT ITEMS ── */
+const aboutObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      aboutObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.about-item').forEach(el => aboutObserver.observe(el));
+
+/* ── CARD TAG ANIMATION ── */
+const cardObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('card-visible');
+      cardObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.card2').forEach(el => cardObserver.observe(el));
+
+/* ── 3D CARD TILT ── */
+document.querySelectorAll('.card2').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    const tiltX = -(y / rect.height) * 8;
+    const tiltY =  (x / rect.width)  * 8;
+    card.style.transform = `perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateZ(4px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
+/* ── ACTIVE NAV HIGHLIGHT ── */
+const sections = document.querySelectorAll('section[id], header.hero');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id || 'hero';
+      navLinks.forEach(link => {
+        link.classList.remove('nav-active');
+        if (link.getAttribute('href') === '#' + id) link.classList.add('nav-active');
+      });
+    }
+  });
+}, { threshold: 0.4 });
+
+document.querySelectorAll('section[id]').forEach(s => navObserver.observe(s));
+
+/* ── HERO COUNTER ANIMATION ── */
+function animateCounter(el, target, duration) {
+  let start = 0;
+  const step = target / (duration / 16);
+  const tick = () => {
+    start = Math.min(start + step, target);
+    el.textContent = Math.floor(start) + (start >= target ? '+' : '');
+    if (start < target) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
+setTimeout(() => {
+  document.querySelectorAll('.stat-num').forEach(el => {
+    animateCounter(el, parseInt(el.dataset.count), 1200);
+  });
+}, 1000);
+
+/* ── BURGER MENU ── */
+const burger = document.getElementById('burgerMenu');
+const nav = document.getElementById('navLinks');
+const sidebar = document.querySelector('.doc-sidebar');
+
+if (burger && nav) {
+    if (window.innerWidth < 800) {
+        if (sidebar) {
+            const indexClone = sidebar.cloneNode(true);
+            nav.appendChild(indexClone);
+        }
+        const footer = document.createElement('div');
+        footer.className = 'drawer-footer';
+        footer.innerHTML = `
+            <p class="drawer-brand">TALBI NASR ALLAH</p>
+            <p>Élève Ingénieur ENSAM</p>
+            <p>&copy; 2026 Tous droits réservés.</p>
+        `;
+        nav.appendChild(footer);
+    }
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
         burger.classList.toggle('toggle');
     });
-    
-    // Fermer le menu automatiquement quand on clique sur un lien
+
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             nav.classList.remove('active');
+            burger.classList.remove('toggle');
         });
     });
-      // Fermer le menu en cliquant sur l'arrière-plan (n'importe où sauf le menu et le burger)
-document.addEventListener('click', (event) => {
-    const isClickInsideMenu = nav.contains(event.target);
-    const isClickOnBurger = burger.contains(event.target);
 
-    // Si le menu est ouvert ET que le clic n'est ni sur le menu ni sur le burger
-    if (nav.classList.contains('active') && !isClickInsideMenu && !isClickOnBurger) {
-        nav.classList.remove('active');
-        burger.classList.remove('toggle');
-    }
-});
-</script>
-
-<script>
-    const backToTopButton = document.getElementById("backToTop");
-
-window.onscroll = function() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        backToTopButton.style.display = "block";
-    } else {
-        backToTopButton.style.display = "none";
-    }
-};
-
-backToTopButton.addEventListener("click", function() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth" // Remonte doucement
+    document.addEventListener('click', (e) => {
+        if (nav.classList.contains('active') && !nav.contains(e.target) && !burger.contains(e.target)) {
+            nav.classList.remove('active');
+            burger.classList.remove('toggle');
+        }
     });
+}
+
+/* ── BACK TO TOP ── */
+const backToTopButton = document.getElementById("backToTop");
+window.addEventListener('scroll', () => {
+    backToTopButton.style.display = (window.scrollY > 300) ? "block" : "none";
+}, { passive: true });
+backToTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
 </script>
-<button id="backToTop" class="back-to-top" title="Retour en haut">
-    ↑
-</button>
 </body>
 </html>
